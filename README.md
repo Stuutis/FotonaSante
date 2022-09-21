@@ -1,4 +1,6 @@
 # FotonaSante
-Primeiro projeto e site que realizei fora dos estudos, um site para saude e estetica de lasers intimos, feito somente com html, css e javascript
+Este é meu primeiro projeto realizado para um cliente, com as cores e imagens selecionadas pelo cliente, as cores podem ser mudadas no css por meio de uma variavel que altera todas as cores entre, primaria, secundaria e hover.
+Desenvolvi esse site com Html, Css, JavaScript e Jquery.
 
-First project and website that I did outside of my studies, a website for health and aesthetics of intimate lasers, made only with html, css and javascript
+This is my first project done for a client, with the colors and images selected by the client, the colors can be changed in the css through a variable that changes all the colors between, primary, secondary and hover.
+I developed this site with Html, Css, JavaScript and Jquery.
