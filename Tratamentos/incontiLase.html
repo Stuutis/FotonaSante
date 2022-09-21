@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>IncontiLase - Fotona</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="96x96"
+      href="/favicon/icons8-woman-hips-ios-96.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Merriweather:wght@400;700&family=Oswald:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/styles/style.css" />
+  </head>
+  <body>
+    <nav id="navigation" class="">
+      <div class="wrapper">
+        <div class="main_header">
+          <span class="logo">
+            <a href="/index.html">
+              <p>FotonaSanté</p>
+            </a>
+          </span>
+        </div>
+
+        <div class="menu">
+          <ul>
+            <li>
+              <a onclick="closeMenu()" href="/index.html#home">Início</a>
+            </li>
+            <li>
+              <a onclick="closeMenu()" href="/index.html#about">Sobre</a>
+            </li>
+            <li>
+              <a onclick="closeMenu()" href="/index.html#treatments"
+                >Conheça os Tratamentos</a
+              >
+            </li>
+            <li>
+              <a onclick="closeMenu()" href="/index.html#contact">Contato</a>
+            </li>
+            <li>
+              <a onclick="closeMenu()" href="/index.html#faq">Perguntas</a>
+            </li>
+          </ul>
+          <a class="button" onClick="closeMenu()" href="/index.html#contact"
+            >Agende sua consulta</a
+          >
+
+          <ul id="menu-social" class="social-links">
+            <li>
+              <a target="_blank" href="https://www.instagram.com/fotona_sante/">
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M17 1.99997H7C4.23858 1.99997 2 4.23855 2 6.99997V17C2 19.7614 4.23858 22 7 22H17C19.7614 22 22 19.7614 22 17V6.99997C22 4.23855 19.7614 1.99997 17 1.99997Z"
+                    stroke="#FFFAF1"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  ></path>
+                  <path
+                    d="M15.9997 11.3701C16.1231 12.2023 15.981 13.0523 15.5935 13.7991C15.206 14.5459 14.5929 15.1515 13.8413 15.5297C13.0898 15.908 12.2382 16.0397 11.4075 15.906C10.5768 15.7723 9.80947 15.3801 9.21455 14.7852C8.61962 14.1903 8.22744 13.4229 8.09377 12.5923C7.96011 11.7616 8.09177 10.91 8.47003 10.1584C8.84829 9.40691 9.45389 8.7938 10.2007 8.4063C10.9475 8.0188 11.7975 7.87665 12.6297 8.00006C13.4786 8.12594 14.2646 8.52152 14.8714 9.12836C15.4782 9.73521 15.8738 10.5211 15.9997 11.3701Z"
+                    stroke="#FFFAF1"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  ></path>
+                  <path
+                    d="M17.5 6.49997H17.51"
+                    stroke="#FFFAF1"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  ></path>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a target="_blank" href="https://wa.me/5511939059744">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  fill="currentColor"
+                  class="bi bi-whatsapp"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z"
+                  />
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a target="_blank" href="https://www.tiktok.com/@fotona_sante">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  fill="currentColor"
+                  class="bi bi-tiktok"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M9 0h1.98c.144.715.54 1.617 1.235 2.512C12.895 3.389 13.797 4 15 4v2c-1.753 0-3.07-.814-4-1.829V11a5 5 0 1 1-5-5v2a3 3 0 1 0 3 3V0Z"
+                  />
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <button
+          aria-expanded="false"
+          aria-label="Abrir menu"
+          onclick="openMenu()"
+          class="open-menu"
+        >
+          <svg
+            width="40"
+            height="40"
+            viewBox="0 0 40 40"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M10 20H30"
+              stroke="#00856F"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+            <path
+              d="M10 12H30"
+              stroke="#00856F"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+            <path
+              d="M18 28L30 28"
+              stroke="#00856F"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+        </button>
+        <button
+          aria-expanded="true"
+          aria-label="Fechar menu"
+          onclick="closeMenu()"
+          class="close-menu"
+        >
+          <svg
+            width="40"
+            height="40"
+            viewBox="0 0 40 40"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M30 10L10 30M10 10L30 30"
+              stroke="#FFFAF1"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+        </button>
+      </div>
+    </nav>
+
+    <section id="treatmentsPage">
+      <div
+        id="treatment-banner"
+        style="
+          background-repeat: no-repeat;
+          background-image: url(/assets/icontiLase/IncontiLase.jpg);
+          background-size: cover;
+        "
+      >
+        <div class="section-color-overlay-wrap">
+          <div class="treatments-page-container">
+            <div class="content">
+              <div class="flex_column">
+                <div class="image_container">
+                  <div class="image-container-inner">
+                    <img
+                      src="/assets/FotonaSmooth_Ladies_IncontiLase.svg"
+                      alt=""
+                    />
+                  </div>
+
+                  <div class="treatment-text-block">
+                    <p>
+                      1 em cada 3 mulheres com mais de 45 anos possuem
+                      incontinência urinária
+                    </p>
+                  </div>
+
+                  <div class="image_container">
+                    <div class="image-container-inner">
+                      <img
+                        src="/assets/icontiLase/Banner_infogr_IncontiLase.png"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div id="treatment-description">
+      <div class="treatment-textbox">
+        <div class="treatment-head">
+          <h1>IncontiLase®</h1>
+          <h3>Tratamento da incontinência urinária</h3>
+        </div>
+
+        <div class="treatment-text">
+          <h6>
+            Um tratamento suave com resultados poderosos na redução da perda
+            indesejada de urina
+          </h6>
+          <ul>
+            <li>
+              O incontilase é um tratamento para a incontinência urinária por
+              estresse
+            </li>
+            <li>sem incisão, minimamente invasivo</li>
+            <li>não precisa de anestesia</li>
+            <li>procedimento seguro</li>
+            <li>nenhum ou um pequeno período de recuperação</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="treatment-textblock">
+        <h6>O que é o incontilase?</h6>
+        <p>
+        Além de tratar a incontinência por estresse, o Incontilase trata também a incontinência do tipo mista. O laser utiliza o modo Smooth, uma tecnologia que torna o tratamento não agressivo. Ocorre um aquecimento suave do tecido, capaz de estimular a produção de colágeno. Há uma melhora da sustentação da região pélvica. Como resultado, a perda involuntária de urina diminui. 
+
+O tratamento é indicado principalmente para incontinência leve a moderada. Quadros graves também apresentam melhora dos sintomas.
+        
+        </p>
+      </div>
+    </div>
+
+    <div id="treatment-how-does-work">
+      <div class="treatment-textbox">
+        <div class="treatment-text">
+          <h3>Como o Incontilase age?</h3>
+          <ul>
+            <li>
+              O laser promove um aquecimento dos tecidos. Ele trabalha as paredes do canal vaginal como um todo. 
+            </li>
+            <li>
+              Há um estímulo do colágeno, o que melhora a firmeza da região. O laser melhora a contração do canal. 
+            </li>
+            <li>O resultado do tratamento é uma diminuição da perda indesejada de urina</li>
+          </ul>
+        </div>
+
+        <div class="treatment-page-button pink_button">
+          <p>
+            <a
+              href="https://www.youtube.com/watch?v=gxP70cPpNP0?rel=0&amp;autoplay=1"
+              class="mfp-iframe lightbox-added" target="_blank"
+              >Play video</a
+            >
+          </p>
+        </div>
+      </div>
+
+      <div class="treatment-image-video video-fix">
+        <div
+          class="video-image-container image-circle play_button_img"
+          itemprop="image"
+        >
+          <div class="video-image-container">
+            <a
+              href="https://www.youtube.com/watch?v=gxP70cPpNP0?rel=0&autoplay=1&ab_channel=FotonaLasers" target="_blank"
+            >
+              <img
+                src="/assets/icontiLase/202_2_Fotona_How-does-it-work-tiny.jpg"
+                alt=""
+              />
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="treatment-advantage">
+      <div class="wrapper">
+        <div class="treatments-overlay-fix">
+          <div class="treatmentsOverlay"></div>
+          <div class="textbox">
+            <h3>Vantagens únicas do Incontilase</h3>
+            <p>
+            Na maioria dos casos, indica-se a realização de duas a três sessões do Incontilase. As aplicações são feitas com um intervalo de um mês. Não há a necessidade de realizar nenhum tipo de preparo antes do laser. A mulher pode retormar suas atividades diárias logo após o procedimento. Outras vantagens são o fato de não haver cortes e ser confortável durante a aplicação. A recuperação é extremamente rápida e não requer analgésicos nem antibióticos.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="treatment-page-faq">
+      <div class="treatment-page-faq-content">
+        <div class="treatment-page-faq-top">
+          <h2 style="text-align: center">
+            Perguntas mais frequentes sobre IncontiLase
+          </h2>
+        </div>
+        <div class="treatment-faq-content">
+          <div class="full_accordion">
+            <div class="closed_bar">
+              <div class="bigger_para">
+                <p>Como o tratamento com o Fotona Smooth funciona?</p>
+                <div class="toggle_icon"></div>
+              </div>
+            </div>
+            <div class="opened_bar">
+              <div class="content_faq">
+                <p>
+                  O tratamento funciona revitalizando as próprias células do tecido mucoso. A luz do laser produz um calor às estruturas vaginais, estimulando a formação de um novo colágeno. Fortalecendo assim, a parede vaginal, melhorando sua sustentação.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="full_accordion">
+            <div class="closed_bar">
+              <div class="bigger_para">
+                <p>
+                  Há alguma limitação de idade para a realização do tratamento?
+                </p>
+                <div class="toggle_icon"></div>
+              </div>
+            </div>
+            <div class="opened_bar">
+              <div class="content_faq">
+                <p>
+               Os tratamentos são recomendados para mulheres de todas as idades. Desde mulheres jovens que passaram por partos traumáticos até aquelas menopausadas e na pós menopausa podem se beneficiar do procedimento.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="full_accordion">
+            <div class="closed_bar">
+              <div class="bigger_para">
+                <p>Como é o período de recuperação após o laser?</p>
+                <div class="toggle_icon"></div>
+              </div>
+            </div>
+            <div class="opened_bar">
+              <div class="content_faq">
+                <p>
+                  A recuperação é simples. Orienta-se apenas que a paciente evite levantar peso, realizar atividades intensas e manter relações sexuais nos 4 dias após o laser. Também recomenda-se evitar o uso de cremes vaginais.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="full_accordion">
+            <div class="closed_bar">
+              <div class="bigger_para">
+                <p>Mulheres na menopausa podem fazer este tratamento?</p>
+                <div class="toggle_icon"></div>
+              </div>
+            </div>
+            <div class="opened_bar">
+              <div class="content_faq">
+                <p>
+                  Sim, o tratamento é indicado principalmente para mulheres na menopausa. Ele foi desenvolvido para uma melhora da secura vaginal, incontinencia urinária, e prolapso.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="full_accordion">
+            <div class="closed_bar">
+              <div class="bigger_para">
+                <p>
+                  Há alguma contra indicação que possa impedir a mulher de
+                  realizar o tratamento?
+                </p>
+                <div class="toggle_icon"></div>
+              </div>
+            </div>
+            <div class="opened_bar">
+              <div class="content_faq">
+                <p>
+                 O resultado positivo no exame de papanicolau, infecções vaginais e herpes ativas, assim como outras patologias são contra inidicações para a realização do laser.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="allFaqBtn">
+            <a class="button" href="/Perguntas-Frequentes.html">Todas as perguntas</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer id="footer">
+      <div class="wrapper">
+        <div class="publi">
+          <ul class="footer-treatments column_a">
+            <h2>Tratamentos</h2>
+            <li>
+              <a href="/Tratamentos/incontiLase.html">IncontiLase</a>
+            </li>
+            <li>
+              <a href="/Tratamentos/intimaLase.html">IntimaLase</a>
+            </li>
+            <li>
+              <a href="/Tratamentos/renovaLase.html">RenovaLase</a>
+            </li>
+            <li>
+              <a href="/Tratamentos/prolapLase.html">ProlapLase</a>
+            </li>
+          </ul>
+
+          <ul class="footer-social column_b">
+            <h2>Siga-nos</h2>
+            <div class="followUs">
+              <li>
+                <a target="_blank" href="https://wa.me/5511939059744">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="bi bi-whatsapp"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z"
+                    />
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a
+                  target="_blank"
+                  href="https://www.instagram.com/fotona_sante/"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="bi bi-instagram"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"
+                    />
+                  </svg>
+                </a>
+              </li>
+
+              <li>
+                <a target="_blank" href="https://www.tiktok.com/@fotona_sante">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="bi bi-tiktok"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M9 0h1.98c.144.715.54 1.617 1.235 2.512C12.895 3.389 13.797 4 15 4v2c-1.753 0-3.07-.814-4-1.829V11a5 5 0 1 1-5-5v2a3 3 0 1 0 3 3V0Z"
+                    />
+                  </svg>
+                </a>
+              </li>
+            </div>
+          </ul>
+        </div>
+      </div>
+    </footer>
+  </body>
+  <script src="/scripts/jquery-3.6.0.js"></script>
+  <script src="/scripts/faqQuestions.js"></script>
+</html>
