@@ -1,5 +1,7 @@
 # <a href="https://fotonasante.com.br/" target="_blank" >FotonaSante</a>
-Este é meu primeiro projeto realizado para um cliente, com as cores e imagens selecionadas pelo cliente, as cores podem ser mudadas no css por meio de uma variavel que altera todas as cores entre, primaria, secundaria e hover.
+Este é meu primeiro projeto realizado para um cliente desde a criação dos codigos até a parte de hospedagem do site.
+
+Com as cores e imagens selecionadas pelo cliente, as cores podem ser mudadas no css por meio de uma variavel que altera todas as cores entre, primaria, secundaria e hover.
 
 Este site contem uma pagina para cada tratamento, sendo eles IncontiLase, RenovaLase, ProlapLase e IntimaLase. Possui tambem uma pagina de faq com todas as perguntas frequentes sobre os tratamentos. Totalizando 6 paginas.
 
