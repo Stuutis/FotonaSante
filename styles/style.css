@@ -16,6 +16,7 @@
   --nav-height: 9rem;
 }
 
+
 html,
 body {
   width: 100%;
@@ -610,7 +611,7 @@ rect {
 
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
-  background-color:var(--primary-color);
+  background-color: var(--primary-color);
   fill: #000 !important;
   border-radius: 5px;
 }
@@ -793,7 +794,7 @@ rect {
   color: #353535;
   margin: 0;
   font-family: 'Merriweather', serif;
-  font-size: 1.133em;
+  font-size: 1.2rem;
   line-height: 1.706;
   font-weight: 400;
   text-align: left;
@@ -887,7 +888,16 @@ rect {
 
 /* ==== Contact ==== */
 
+iframe {
+  margin: 20px auto auto auto;
+  display: flex;
+  width: 230px;
+  height: 300px;
+
+}
+
 #contact {
+  padding-bottom: 3rem;
   padding-top: 3rem;
   background-color: var(--secondary-color);
   margin-top: 0;
@@ -940,11 +950,14 @@ rect {
   letter-spacing: 1px;
   font-weight: 400;
   line-height: 1.2;
-  color: #353535;
+  color: whitesmoke;
+  font-weight: bold;
 }
 
 #contact .button {
+  margin: auto;
   display: flex;
+  justify-content: center;
 }
 
 #contact .button:hover {
@@ -1392,6 +1405,13 @@ footer li {
 @media (min-width: 1024px) {
 
   /* ==== GERAL ==== */
+  iframe {
+    margin-right: 40px;
+    border-radius: 100%;
+    width: 400px;
+  }
+
+
   body {
     overflow: none;
     background-color: #f1f1f1;
@@ -1541,6 +1561,11 @@ footer li {
   }
 
 
+  /* ==== CONTACT ====*/
+  #contact {
+    display: flex;
+
+  }
 
 
 
@@ -1978,7 +2003,12 @@ footer li {
     z-index: 1;
   }
 
-
+  iframe {
+    margin-right: 150px;
+    border-radius: 100%;
+    width: 400px;
+    height: 400px;
+  }
 
   #treatment-advantage .treatmentsOverlay {
     background-repeat: repeat;
